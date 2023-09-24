@@ -100,8 +100,10 @@ Software Installation on the PC
             More information regarding available DMR repeaters can be found at:
             przemienniki.net
             radioid.net
-            brandmiester.nentwork
+            brandmiester.network
             sp-dmr.pl
+
+            Information regarding existing talking groups in Poland can be found at https://wiki.brandmeister.network/index.php/Poland
 
     The easiest way to define radio channel is via programming Software        
     
