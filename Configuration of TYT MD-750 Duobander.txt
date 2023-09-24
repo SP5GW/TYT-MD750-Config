@@ -103,7 +103,24 @@ Software Installation on the PC
             brandmiester.nentwork
             sp-dmr.pl
 
-            
+    The easiest way to define radio channel is via programming Software        
     
+            General Setting -> RadioID: 2601994
 
+            Contact -> Digital Contact -> Add -> Group Call -> Name: SP260
+            Contact -> Digital Contact -> Add -> Group Call -> Call Id: 260
+
+            Channel -> Add (Right Click on Channel) 
+            Channel -> Add -> Mode:Digital
+            Channel -> Add -> Name:SR5WU
+            Channel -> Add -> RX Freq.:438.77500MHz
+            Channel -> Add -> TX Feq.:431.17500MHz
+            Channel -> Add -> Squelsh Level:0
+            Channel -> Add -> Color Code: 5
+            Channel -> Add -> Contact: 260
+            Channel -> Add -> Slot: 1
+
+            Zone -> Add -> Rename:Digi_SR5
+            Add SR5_WU channel to Digi_SR5 using gui
+            
 
