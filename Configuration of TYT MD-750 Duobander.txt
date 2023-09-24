@@ -107,8 +107,14 @@ Software Installation on the PC
     
             General Setting -> RadioID: 2601994
 
-            Contact -> Digital Contact -> Add -> Group Call -> Name: SP260
+            Define group calls you will be listening to/transmitting:
+            Contact -> Digital Contact -> Add -> Group Call -> Name: TG260=SP (DMR Group for Poland)
             Contact -> Digital Contact -> Add -> Group Call -> Call Id: 260
+
+            Assign groups you defined in previous step to Rx Group List
+            (Idea here is that you can listen to multiple groups)
+            Rx Group List -> Create Group called Groups and move Group Call Contacts there
+
 
             Channel -> Add (Right Click on Channel) 
             Channel -> Add -> Mode:Digital
@@ -116,11 +122,13 @@ Software Installation on the PC
             Channel -> Add -> RX Freq.:438.77500MHz
             Channel -> Add -> TX Feq.:431.17500MHz
             Channel -> Add -> Squelsh Level:0
+            Channel -> Add -> Rx Group List:Groups
             Channel -> Add -> Color Code: 5
-            Channel -> Add -> Contact: 260
+            Channel -> Add -> Contact: TG260-SP (this is the group you will transmit to)
             Channel -> Add -> Slot: 1
 
             Zone -> Add -> Rename:Digi_SR5
             Add SR5_WU channel to Digi_SR5 using gui
             
-
+            File -> Save:save configuration locally on the computer
+            Program -> Write (write new configuration to the radio)
