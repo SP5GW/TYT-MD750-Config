@@ -52,7 +52,7 @@ Software Installation on the PC
             Now you can go back to top menu level from where you can directly set radio frequecny. After pushing PTT button you 
             will be able to transmit. When you are trasmitting LED on the top of the radio changes from Green to Red.
 
-            Configuring Analog Repeater
+            Configuring Analog Repeater from Radio Keypad
                 We will use SR5WP (FM-Link repeater), its parameters are:
                 TX Frequency: 438.6250MHz
                 RX Frequency: 431.0250MHz (offset: -7.1MHz)
