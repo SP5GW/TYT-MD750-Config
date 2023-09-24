@@ -52,7 +52,7 @@ Software Installation on the PC
             Now you can go back to top menu level from where you can directly set radio frequecny. After pushing PTT button you 
             will be able to transmit. When you are trasmitting LED on the top of the radio changes from Green to Red.
 
-            Configuring Analog Repeater from Radio Keypad
+            Configuring Analog Repeater
                 We will use SR5WP (FM-Link repeater), its parameters are:
                 TX Frequency: 438.6250MHz
                 RX Frequency: 431.0250MHz (offset: -7.1MHz)
@@ -83,4 +83,27 @@ Software Installation on the PC
 
             File -> Save:save configuration locally on the computer
             Program -> Write (write new configuration to the radio)
+
+        Channel Configuration in Digital Mode
+            In order to be able to attach to DMR network you need to register on radioid.net portal. This is mandatory step in order 
+            to obtain Radio ID (DMR ID) parameter, which needs to be used as part of your equipment configuration.
+            After your application has been approved you will receive two Radio ID numbers. Use the one with remark: DMR in subsequent 
+            configuration steps of this manual.
+
+        Configuring Digital DMR Repeater 
+            We will use SR5WU (DMR repeater located in Warsaw-Ursynow), its parameters are:
+                TX Frequency: 438.7750MHz
+                RX Frequency: 431.1750MHz
+                Offset: -7.6MHz 
+                Color Code: 5
+
+            More information regarding available DMR repeaters can be found at:
+            przemienniki.net
+            radioid.net
+            brandmiester.nentwork
+            sp-dmr.pl
+
+            
+    
+
 
