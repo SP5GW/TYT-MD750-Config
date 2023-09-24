@@ -45,41 +45,92 @@ Software Installation on the PC
         OK -> Zone -> Toggle between defined zones (zones group channels available from the radio's menu)
 
         OK -> SET -> Channel CFG -> (6) Freq Step:12.5k (according IARU Region 1 2m band plan)
-        OK -> SET -> Channel CFG -> (7) Channel Type:FM - to put radio into analog mode
 
-        Now you can go back to top menu level from where you can directly set radio frequecny. After pushing PTT button you 
-        will be able to transmit. When you are trasmitting LED on the top of the radio changes from Green to Red.
+        Channel Configuration in Analog Mode
+            OK -> SET -> Channel CFG -> (7) Channel Type:FM - to put radio into analog mode
 
-        Configuring Analog Repeater from Radio Keypad
-        We will use SR5WP (FM-Link repeater), its parameters are:
-            TX Frequency: 438.6250MHz
-            RX Frequency: 431.0250MHz (offset: -7.1MHz)
-            CTCSS 127.3 Hz (transmitter and activation)
+            Now you can go back to top menu level from where you can directly set radio frequecny. After pushing PTT button you 
+            will be able to transmit. When you are trasmitting LED on the top of the radio changes from Green to Red.
 
-            Detailed information regarding repeater configuration can be found under the links below:
-                przemienniki.net 
-                fm-link.pl 
-            Alternative method to define repeater from radio menu using offset (did not always worked for me due to lack of 
-            offset availability in radio's menu)    
-                Sierra Echo youtube video with step by step configuration (alternative configuration method using offset)
-                https://www.youtube.com/watch?v=RDXTbgtwDEY
+            Configuring Analog Repeater from Radio Keypad
+                We will use SR5WP (FM-Link repeater), its parameters are:
+                TX Frequency: 438.6250MHz
+                RX Frequency: 431.0250MHz (offset: -7.1MHz)
+                CTCSS 127.3 Hz (transmitter and activation)
 
-        The easiest way to define radio channel is via programming Software
+                Detailed information regarding repeater configuration can be found under the links below:
+                    przemienniki.net 
+                    fm-link.pl 
+                Alternative method to define repeater from radio menu using offset (did not always worked for me due to lack of 
+                offset availability in radio's menu)    
+                    Sierra Echo youtube video with step by step configuration (alternative configuration method using offset)
+                    https://www.youtube.com/watch?v=RDXTbgtwDEY
 
-        VFO -> Mode:Analog Set both VFOs to Analog mode
-        Channel -> Add (Right Click on Channel) 
-        Channel -> Add -> Mode:Analog
-        Channel -> Add -> Name:SR5WP
-        Channel -> Add -> RX Freq.:438.6250MHz
-        Channel -> Add -> TX Feq.:431.0250MHz
-        Channel -> Add -> Squelsh Level:0
-        Channel -> Add -> Bandwith:12.5kHz
-        Channel -> Add -> Tx Tone:127.3Hz
-        Channel -> Add -> Rx Tone: 127.3Hz
+            The easiest way to define radio channel is via programming Software
 
-        Zone -> Add (Right Click on Zone) -> Move new channel listed from Available to Member
+            VFO -> Mode:Analog Set both VFOs to Analog mode
+            Channel -> Add (Right Click on Channel) 
+            Channel -> Add -> Mode:Analog
+            Channel -> Add -> Name:SR5WP
+            Channel -> Add -> RX Freq.:438.6250MHz
+            Channel -> Add -> TX Feq.:431.0250MHz
+            Channel -> Add -> Squelsh Level:0
+            Channel -> Add -> Bandwith:12.5kHz
+            Channel -> Add -> Tx Tone:127.3Hz
+            Channel -> Add -> Rx Tone: 127.3Hz
 
-        File -> Save:save configuration locally on the computer
-        Program -> Write (write new configuration to the radio)
+            Zone -> Add (Right Click on Zone) -> Move new channel listed from Available to Member
 
-new line
+            File -> Save:save configuration locally on the computer
+            Program -> Write (write new configuration to the radio)
+
+        Channel Configuration in Digital Mode
+            In order to be able to attach to DMR network you need to register on radioid.net portal. This is mandatory step in order 
+            to obtain Radio ID (DMR ID) parameter, which needs to be used as part of your equipment configuration.
+            After your application has been approved you will receive two Radio ID numbers. Use the one with remark: DMR in subsequent 
+            configuration steps of this manual.
+
+        Configuring Digital DMR Repeater 
+            We will use SR5WU (DMR repeater located in Warsaw-Ursynow), its parameters are:
+                TX Frequency: 438.7750MHz
+                RX Frequency: 431.1750MHz
+                Offset: -7.6MHz 
+                Color Code: 5
+
+            More information regarding available DMR repeaters can be found at:
+            przemienniki.net
+            radioid.net
+            brandmiester.network
+            sp-dmr.pl
+
+            Information regarding existing talking groups in Poland can be found at https://wiki.brandmeister.network/index.php/Poland
+
+    The easiest way to define radio channel is via programming Software        
+    
+            General Setting -> RadioID: 2601994
+
+            Define group calls you will be listening to/transmitting:
+            Contact -> Digital Contact -> Add -> Group Call -> Name: TG260=SP (DMR Group for Poland)
+            Contact -> Digital Contact -> Add -> Group Call -> Call Id: 260
+
+            Assign groups you defined in previous step to Rx Group List
+            (Idea here is that you can listen to multiple groups)
+            Rx Group List -> Create Group called Groups and move Group Call Contacts there
+
+
+            Channel -> Add (Right Click on Channel) 
+            Channel -> Add -> Mode:Digital
+            Channel -> Add -> Name:SR5WU
+            Channel -> Add -> RX Freq.:438.77500MHz
+            Channel -> Add -> TX Feq.:431.17500MHz
+            Channel -> Add -> Squelsh Level:0
+            Channel -> Add -> Rx Group List:Groups
+            Channel -> Add -> Color Code: 5
+            Channel -> Add -> Contact: TG260-SP (this is the group you will transmit to)
+            Channel -> Add -> Slot: 1
+
+            Zone -> Add -> Rename:Digi_SR5
+            Add SR5_WU channel to Digi_SR5 using gui
+            
+            File -> Save:save configuration locally on the computer
+            Program -> Write (write new configuration to the radio)
