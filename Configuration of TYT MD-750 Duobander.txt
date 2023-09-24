@@ -107,10 +107,3 @@ Software Installation on the PC
     
 
 
-<<<<<<< HEAD
-=======
-        File -> Save:save configuration locally on the computer
-        Program -> Write (write new configuration to the radio)
-
-new line
->>>>>>> origin/HEAD
