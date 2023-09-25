@@ -126,7 +126,7 @@ Channel Configuration in Digital Mode
 		-  Zone -> Add -> Rename:Digi_SR5
 		-  Add SR5_WU channel to Digi_SR5 using gui
             
-		-  File -> Save:save configuration locally on the computer
-		-  Program -> Write (write new configuration to the radio)
+		- File -> Save:save configuration locally on the computer
+		- Program -> Write (write new configuration to the radio)
 
 Example configuration files, wchich can be loaded to TYT programming software can be found in directory: ./RAdio Configuration Files
